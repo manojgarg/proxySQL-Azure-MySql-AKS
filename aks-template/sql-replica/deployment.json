@@ -1,0 +1,108 @@
+{
+  "id": "/subscriptions/9302af45-2eff-49b6-a5dd-c18347d80d90/resourceGroups/AKSProxySqlRG/providers/Microsoft.Resources/deployments/Microsoft.MySQLServer.createMySqlServer_4e4b2403878a4669b9a19ee8",
+  "name": "Microsoft.MySQLServer.createMySqlServer_4e4b2403878a4669b9a19ee8",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/9302af45-2eff-49b6-a5dd-c18347d80d90/resourceGroups/AKSProxySqlRG/providers/Microsoft.DBforMySQL/servers/mastermysql",
+    "marketplaceItemId": "Microsoft.MySQLServer"
+  },
+  "properties": {
+    "templateHash": "4284225623511864437",
+    "parameters": {
+      "administratorLogin": {
+        "type": "String",
+        "value": "mastersqluser"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "location": {
+        "type": "String",
+        "value": "westindia"
+      },
+      "serverName": {
+        "type": "String",
+        "value": "mastermysql"
+      },
+      "skuCapacity": {
+        "type": "Int",
+        "value": 2
+      },
+      "skuFamily": {
+        "type": "String",
+        "value": "Gen5"
+      },
+      "skuName": {
+        "type": "String",
+        "value": "GP_Gen5_2"
+      },
+      "skuSizeMB": {
+        "type": "Int",
+        "value": 102400
+      },
+      "skuTier": {
+        "type": "String",
+        "value": "GeneralPurpose"
+      },
+      "version": {
+        "type": "String",
+        "value": "8.0"
+      },
+      "backupRetentionDays": {
+        "type": "Int",
+        "value": 7
+      },
+      "geoRedundantBackup": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "previewFeature": {
+        "type": "String",
+        "value": ""
+      },
+      "tags": {
+        "type": "Object",
+        "value": {
+          "Owner": "Manoj",
+          "Enviornment": "POC"
+        }
+      },
+      "storageAutoGrow": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "infrastructureEncryption": {
+        "type": "String",
+        "value": "Disabled"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2022-04-26T09:00:08.6351139Z",
+    "duration": "PT2M10.5554618S",
+    "correlationId": "deb0e1af-2eb0-43fc-99e3-e581dfa60334",
+    "providers": [
+      {
+        "namespace": "Microsoft.DBforMySQL",
+        "resourceTypes": [
+          {
+            "resourceType": "servers",
+            "locations": [
+              "westindia"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputResources": [
+      {
+        "id": "/subscriptions/9302af45-2eff-49b6-a5dd-c18347d80d90/resourceGroups/AKSProxySqlRG/providers/Microsoft.DBforMySQL/servers/mastermysql"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

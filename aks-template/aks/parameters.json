@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "proxySQLAKS"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "dnsPrefix": {
+            "value": "proxySQLAKS-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.22.6"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "enableSecretStoreCSIDriver": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "workspaceName": {
+            "value": "dronaloganalytic"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/9302af45-2eff-49b6-a5dd-c18347d80d90/resourcegroups/mnkazcindrone/providers/microsoft.operationalinsights/workspaces/dronaloganalytic"
+        },
+        "workspaceRegion": {
+            "value": "centralindia"
+        }
+    }
+}
